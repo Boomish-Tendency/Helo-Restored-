@@ -33,7 +33,6 @@ massive({
 })
   .then((dbInstance) => {
     app.set("db", dbInstance);
-    console.log("DB working");
     app.listen(SERVER_PORT, () =>
       console.log(`Server listening on port ${SERVER_PORT}`)
     );
